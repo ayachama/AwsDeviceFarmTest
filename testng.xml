@@ -4,6 +4,7 @@
 	<test name="testngTest">
 		<classes>
 			<class name="tests.AppTest"></class>
+			<class name="tests.AppTest2"></class>
 		</classes>
 	</test>
 </suite>
