@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 public class AppTest2 extends BaseTest {
 
-	@Test(dataProvider = "getData")
-	public void enterData(String name, String age) {
+	@Test(dataProvider = "getData2")
+	public void enterData2(String name, String age) {
 		setText(By.id("nameField"), name);
 		setText(By.id("ageField"), age);
 		driver.findElement(By.id("loginButton")).click();
@@ -20,7 +20,7 @@ public class AppTest2 extends BaseTest {
 	}
 
 	@DataProvider
-	public Object[][] getData() {
+	public Object[][] getData2() {
 		Object[][] data = new Object[3][2];
 
 		data[0][0] = "Rob";
